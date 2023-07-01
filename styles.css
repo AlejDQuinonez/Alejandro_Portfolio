@@ -85,6 +85,14 @@ img {
     padding-top: 30px;
 }
 
+#work {
+    padding-top: 100px;
+}
+
+#ed {
+    padding-top: 100px;
+}
+
 #freelance {
     display: flex;
     flex-direction: row;
