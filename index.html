@@ -1,74 +1,19 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en" id="target">
 <head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Alejandro Quinonez's Online Portfolio</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro's Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body >
-    <!--Header section-->
-    <section class="header">
-        <div>
-            <h2 id="top-subheader">Hello, My name is</h2>
-            <h1>Alejandro Quinonez.</h1>
-            <h2 id="bottom-subheader">I'm a IOS and Web developer.</h2>
-        </div>
-    </section>
-
-    <!--Summary section-->
-    <section>
-        <div class="img-container">
-            <img src = "Assets/images/Alejandro's_Mugshot.JPG" alt = "Alejandro Quinonez's face">
-        </div>
-        <div class="resume-container">
-            <p>
-                Ready to demostrate my abilites in any project needed. Able to adapt to any situation, 
-                I also work well within a team, and able to work independently if required as well.
-            </p>
-        </div>
-    </section>
-    
-    <!--Experience Section-->
-    <section>
-        <div class="experience-flex">
-            <div id="ed">
-                <img class ="ex-flex-img" src="./Assets/images/FIU_panther.jpg"/>
-                <h3>Education</h3>
-                <p>Bachelor's of Science Degree in Internet of Things</p>
-                <p>August 2019 - December 2021</p>
-            </div>
-            <div id="skills">
-                <!--Place holder for finish Creations logo-->
-                <img class ="ex-flex-img" src="./Assets/images/FortazoLogo.png"/>
-                <h3>Fortazo Corp.</h3>
-                <p>IT Specialist</p>
-            </div>
-            <div id="work">
-                <img class ="ex-flex-img" src="./Assets/images/skills_logo.png"/>
-                <h3>Skills</h3>
-                <p>Programming Languages: HTML, CSS, Javascript, Swift</p>
-                <p>Frameworks: Xcode, UIKit, VS Code, Bootstrap</p>
-            </div>
-        </div>
-    </section>
-
-    <!--Freelance Section-->
-    <section>
-        <h2 id="freelance-title">Freelance Work</h2>
-        <div id="freelance">
-            <!--Skip for now.-->
-            <button class="freelance-button" id="cleaning-img"><a href = "https://alejdquinonez.github.io/Fortazo_Corp/"><h4>Fortazo Corp</h4></a></button>
-            <button class="freelance-button" id="painting-img"><a href = "./DoesNotWork.html"><h4>Finish Creations Inc</h4></a></button>
-        </div>
-        <div id="contact">
-            <button id="contact-button"><a href = "./contact.html" id="contact-color"><h4 id="contact-color">Contact</h4></a></button>
-        </div>
-    </section>
+    <div class="flex-container">
+        <div><h1 class="animate-text">Hello, welcome to my website.</h1></div>
+        <div><button id="button" id="toHomeButton"><a href="./home.html">Click here to begin.</a></button></div>
+    </div>
+    <script src="./index.js"></script>
 </body>
-<footer> © 2023 Alejandro David Quinonez</footer>
 </html>

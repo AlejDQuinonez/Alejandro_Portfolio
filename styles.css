@@ -1,148 +1,144 @@
-html {
-    color: whitesmoke;
-    background: linear-gradient(blue,purple);
-}
-.header {
-    padding: 10px;
-    margin: -20px;
-    height: 500px;
-    width: 100%;
+/* all pages */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h1 {
+html {
+    background: #454545;
+    height: 100%;
     font-family: 'Press Start 2P', cursive;
     color: #16FF00;
-    font-size: 50px;
+    font-size: 23px;
     text-align: center;
-    padding: 60px;
-    margin-top: 80px;
-    margin-bottom: -20px;
+    scroll-behavior: smooth;
 }
 
-h2 {
-    font-size: 40px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h3 {
-    font-size: 30px;
+/* index page */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 735px;
+    justify-content: center;
+    align-items: center;
+}  
+
+/* index javascript */
+span {
+    opacity: 0;
+    transition: all .5s ease;
+    /* transform: translateY(50px); */
 }
 
-h4, a {
-    font-size: 25px;
-    color: #FFD93D;
+span.fade {
+    opacity: 1;
+    /* transform: translateY(8px); */
 }
 
-
-p {
+#button {
+    opacity: 0; 
+    background-color: black;
+    border-radius: 60px;
+    border-color: black;
+    cursor: pointer;
+    font-family: sans-serif;
     font-size: 20px;
-}
-
-#top-subheader {
-    position: relative;
-    left: 60px;
-    top: 60px;
-}
-
-#bottom-subheader, #freelance-title, #contact-button, #body-contact{
+    padding: 15px;
     text-align: center;
-}
-
-.img-container {
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    height: 250px;
-    border-radius: 25%;
-}
-
-.resume-container {
-    width: 600px;
-    margin: auto;
-    text-align: center;
-}
-
-.experience-flex {
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    text-align: center;
-    padding: 200px;
-}
-
-.experience-flex > div {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#skills {
-    padding-top: 30px;
-}
-
-#work {
-    padding-top: 100px;
-}
-
-#ed {
-    padding-top: 100px;
-}
-
-#freelance {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 80px;
-}
-
-.freelance-button {
-    height: 200px;
-    width: 400px;
-    border-radius: 8%;
-    border: 2px solid black;
-}
-
-#cleaning-img {
-    background: url("./Assets/images/cleaning.jpg");
-    background-size: 100%;
-    background-size: auto;
-}
-
-#painting-img {
-    background: url("./Assets/images/kitchen.jpg");
-    background-size: 100%;
-    background-size: none;
-}
-
-#contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 80px;
+    animation: glowing 3000ms infinite;
     margin-top: 50px;
 }
 
-#contact-button {
-    height: 50px;
-    width: 150px;
-    border-radius: 8%;
-    background-color: turquoise;
-    border: 2px solid black;
-    padding-bottom: 90px;
+@keyframes glowing {
+    0% {
+        background-color: black;
+        box-shadow: 0 0 5px lightgray;
+        color: white;
+    }
+    50% {
+        background-color: lightgray;
+        box-shadow: 0 0 20px black;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        box-shadow: 0 0 5px lightgray;
+        color: white;
+    }
 }
 
-#contact-color {
-    color: black;
+/* home page */
+header {
+    position: sticky;
+    top: 0px;
+    background: black;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    margin: auto;
+    width: 90%; 
+}
+
+#heading {
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    padding: 14px 16px;
+}
+  
+/* .nav-links a:hover:not(.active) {
+    background-color: white;
+} */
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    background: linear-gradient(to right top, blue, purple);
+}
+.about {
+    background: linear-gradient(to right top, black, red);
+}
+.projects {
+    background: linear-gradient(to right top, white, purple);
+}
+.skills {
+    background: linear-gradient(to right top, gray, orange);
+}
+.contact {
+    background: linear-gradient(to right top, teal, magenta);
+}
+
+.bubble {
+    position: absolute;
+    z-index: -2;
+    background: #753188;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    border-radius: 5%;
 }
