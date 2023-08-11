@@ -15,6 +15,30 @@ html {
     scroll-behavior: smooth;
 }
 
+#mugshot-pic {
+    height: 350px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+#name-underline {
+    text-decoration: underline;
+}
+
+#home-intro {
+    padding: 50px;
+    line-height: 2.0;
+}
+
+hr {
+    position: relative;
+    top: 5px;
+    border: none;
+    height: 10px;
+    background: #16FF00;
+    margin-bottom: 50px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -113,22 +137,56 @@ nav {
 
 section {
     min-height: 100vh;
+    padding-top: 100px;
+}
+
+.box {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 225px;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+p {
+    padding: 50px;
+}
+
+.skills-list li {
+    padding-top: 15px;
+    list-style: none;
+}
+
+#PL{
+    padding-bottom: 190px;
+}
+
+#about-paragraph { 
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 150px;
+    line-height: 2.0;
+
 }
 
 .home {
     background: linear-gradient(to right top, blue, purple);
 }
 .about {
-    background: linear-gradient(to right top, black, red);
+    background: linear-gradient(to right top, purple, black);
 }
 .projects {
-    background: linear-gradient(to right top, white, purple);
+    background: linear-gradient(to right top, black, red);
 }
 .skills {
-    background: linear-gradient(to right top, gray, orange);
+    background: linear-gradient(to right top, red, teal);
 }
 .contact {
     background: linear-gradient(to right top, teal, magenta);
@@ -141,4 +199,10 @@ section {
     transform: scale(1);
     transition: all 0.5s ease;
     border-radius: 5%;
+}
+
+footer{
+    height: 50px;
+    padding-top: 10px;
+    background-color: black;
 }
